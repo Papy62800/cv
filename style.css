@@ -1,0 +1,49 @@
+body{
+background-color: blueviolet;
+
+}
+
+h1,h2{
+    text-align: left;
+    margin-left: 50px;
+
+}
+
+h3{
+text-align: center;
+}
+
+#boite{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;  
+
+}
+#colonneG{
+    background-color: aquamarine;
+    text-align: left;
+    border: solid 2px;
+    width: 30%; 
+}
+#colonneD{
+    background-color: aqua;
+   /* text-align: left;*/
+    border: solid 2px;
+    width: 70%;
+
+}
+
+#photoProfile{
+    width: 50%;
+    height: 30%;
+}
+
+
+
+.job{
+    
+    align-self: flex-start;
+    color: red;
+}
+
+/*   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
