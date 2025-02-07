@@ -1,12 +1,10 @@
 body{
 background-color: blueviolet;
-
 }
 
 h1,h2{
     text-align: left;
     margin-left: 50px;
-
 }
 
 h3{
@@ -16,9 +14,8 @@ text-align: center;
 #boite{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;  
-
 }
+
 #colonneG{
     background-color: aquamarine;
     text-align: left;
@@ -27,23 +24,35 @@ text-align: center;
 }
 #colonneD{
     background-color: aqua;
-   /* text-align: left;*/
     border: solid 2px;
     width: 70%;
-
 }
 
 #photoProfile{
-    width: 50%;
+    width: 60%;
     height: 30%;
+    border-radius: 50%;
 }
 
+section{ 
+    display:flex;  
+}
+#auchan{
+    display: flex;
+    height: 140px;
+}
 
+.dateExp{ 
+border: solid 2px;
+width: 30%;
+}
 
 .job{
-    
-    align-self: flex-start;
-    color: red;
+display: flex;
+flex-direction: column;
+row-gap: 30px;
+width: 70%;
+border: solid 2px;
+
 }
 
-/*   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
