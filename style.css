@@ -1,5 +1,7 @@
-body{
-background-color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1,h2{
@@ -33,7 +35,7 @@ h4 ,p{margin-left: 5px;}
 }
 
 #colonneG{
-    background-color: rgba(59, 59, 59, 0.171);
+    background-color: rgba(59, 59, 59);
     text-align: left;   
     width: 30%; 
     height: 100%;
@@ -46,9 +48,25 @@ h4 ,p{margin-left: 5px;}
 }
 
 #photoProfile{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
-    height: 30%;
+    height: 30%; 
+    border: solid 2px;
     border-radius: 50%;
+}
+#pro{
+    margin-left: 0px;
+    text-align: center;
+} 
+#ligneP{
+    border: solid ;
+    width: 40px;
+    height:1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 
@@ -75,10 +93,26 @@ width: 70%;
 
 
 @media  screen and (max-width: 800px) {
-    body {
-        width: 95%;
-        background-color: blue ;
-        
+    body {      
+    width: 95%;
+           
     }
     
+    h3{
+        margin-left: 10%;
+    }
+    #colonneG{
+        background-color: red;
+        height: 850px;
+    }
+    #photoProfile{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 20%; 
+        border: solid 2px;
+        border-radius: 50%;
+    }
 }
