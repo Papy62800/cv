@@ -108,11 +108,30 @@ width: 70%;
     #photoProfile{
     
         display: block;
+        margin-top: 3px;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
-        height: 20%; 
+        height: 12%; 
         border: solid 2px;
         border-radius: 50%;
+    }
+    h1, h2, h3{
+        font-size: 20px;
+        margin-left: 2px;
+    }
+    p, li, ol{
+        font-size: 15px;
+    }
+
+     #colonneD {
+        margin-left: 5px;
+    }
+    li{
+        margin-left: 17px;
+    }
+    .ligne{
+        margin-left: 10px;
+        width: 30%;
     }
 }
