@@ -39,6 +39,8 @@ h4 ,p{margin-left: 5px;}
     text-align: left;   
     width: 30%; 
     height: 100%;
+    
+   
    
 }
 #colonneD{
@@ -47,6 +49,16 @@ h4 ,p{margin-left: 5px;}
    
 }
 
+#photoProfil{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%; 
+    border: solid 2px;
+    border-radius: 50%;
+   
+}
 #photoProfile{ 
     display: block;
     margin-left: auto;
@@ -55,6 +67,7 @@ h4 ,p{margin-left: 5px;}
     height: 30%; 
     border: solid 2px;
     border-radius: 50%;
+   
 }
 #pro{
     margin-left: 0px;
@@ -90,48 +103,91 @@ row-gap: 30px;
 width: 70%;
 }
 
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
 
 
 @media  screen and (max-width: 800px) {
     body {      
-    width: 95%;
-           
+    width: 95%;       
     }
-    
-    h3{
-        margin-left: 10%;
-    }
-    #colonneG{
-        background-color: red;
-        height: 850px;
-    }
-    #photoProfile{
-    
+    #colonneD{
         display: block;
-        margin-top: 3px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        height: 12%; 
-        border: solid 2px;
-        border-radius: 50%;
-    }
-    h1, h2, h3{
-        font-size: 20px;
-        margin-left: 2px;
-    }
-    p, li, ol{
-        font-size: 15px;
+        width: 100%;
+        padding: 5px;
+      /*  border: solid 2px;
+        border-color:red;
+        background-color: aqua;*/
     }
 
-     #colonneD {
-        margin-left: 5px;
+    #photoMobile{
+        display: flex;
+      //  flex-direction: column-reverse;
+        border: solid 2px;     
+      
     }
-    li{
-        margin-left: 17px;
+    .row{
+        display: flex;
+      //  flex-direction: column;
+        margin-bottom: 10px;
+
     }
-    .ligne{
+    .cell{
+        width: 75%;
+        margin-left: 0px;
+       /* background-color: blue;*/
+        align-self: center;
+        
+    }
+    .cell1{       
+        text-align: center;
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        
+        
+     }
+    
+     h2{
+      font-size: 30px;
+      width: 100%;
+      text-align: start;
+      align-self: flex-end;
+     /* border: solid 2px;*/
+    }
+   button{
+    /*border: solid 2px;*/
+    align-self: self-end;
+    margin-bottom: px;
+   }
+
+    h3{
+        margin-left: 10%;
+        font-size: 25px;
+    }
+ 
+    #photoProfile{ 
+        
+        margin-top: 5px;
         margin-left: 10px;
         width: 30%;
+        height: 30%; 
+        border: solid 2px;
+        border-radius: 50%;
+        border-color: blackd;
     }
+
+    #colonneG{
+        display: none;
+       }
+    
+    .hidden{
+        display: block;
+    }
+    .cell3{display: none;}
+
 }
