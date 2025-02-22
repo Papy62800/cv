@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-    
+
 <head>
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
+
 <body>
     <div id="boite">
-    <div id="colonneD">
-        <div class="row hidden"  >
-     <img src="./profile-picture.jpeg" alt="photoProfil"  id="photoProfil"  >
-     <button  id="toggleButton" onclick="document.getElementById('colonne').style.visibility='hidden'">afficher profil</button>
-     <h1 class="cell">Demessine Antoine </h1>
+        <div id="colonneD">
+            <div class="row hidden">
+                <img src="./profile-picture.jpeg" alt="photoProfil" id="photoProfil">
+                <div>   <button id="toggleButton">afficher profil</button></div>
+             
+                <h1 class="cell">Demessine Antoine </h1>
+            </div>
+            <h1 class="cell3 ">Demessine Antoine </h1>
+            <h2 class="cell1">Technicien VUL/VI</h2>
+
+            <div id="formation">
+                <h3 id="tt">FORMATION</h3>
+                <div class="ligne"></div>
+                <ul>
+                    <ol> 2022: Habilitation vehicules haute tension et hybride (interne à l'entreprise)</ol>
+                    <ol> 2014-2016: BTS AVA option vehicules industruiel</ol>
+                    <ol> 2011-2013: BAC Mecanicien poids lourd</ol>
+                </ul>
+            </div>
+
+            <div id="experiences">
+                <h3>EXPERIENCES</h3>
+                <div class="ligne"></div>
+                <section>
+                    <div class="dateExp">
+                        <p> 04/11/2014 - aujourd'hui</p>
+
+
+                    </div>
+                    <div class="job">
+                        <p>technicien VUL/VI Mercedes-Benz GORRIAS ARRAS</p>
+                        <ul>
+                            <li class="tache"> de la petite mecanique: viange, freinage, embrayage... </li>
+                            <li class="tache"> à la grosse mecanique: remplacement d'organe (moteur, boite, pont) </li>
+                            <li class="tache"> du diagnostique electrique, mecanique </li>
+                        </ul>
+                    </div>
+
+                </section>
+                <section id="auchan">
+                    <div class="dateExp">
+                        <p>2013 - 2014</p>
+                    </div>
+
+                    <div class="job">
+                        <p>job etudiant à Auchan englos </p>
+                        <ul>
+                            <li class="tache"> mise en rayon </li>
+                    </div>
+                </section>
+            </div>
+            <div id="competences">
+                <h3>COMPETENCES</h3>
+                <div class="ligne"></div>
+                <h4>languages</h4>
+
+            </div>
+        </div>
+
+        <div id="colonneG">
+
+            <img src="./profile-picture.jpeg" alt="photoProfile" id="photoProfile">
+
+            <div id="profil">
+                <h3 id="pro">profil</h3>
+                <div id="ligneP"></div>
+                <p>sérieux, consciencieux, curieux pour apprendre de nouvelles choses</p>
+            </div>
+
+            <div id="contact">
+                <h3>contact</h3>
+                <div class="ligne"></div>
+                <ul>
+                    <li> Ville: ... </li>
+                    <li> mail: ...</li>
+                    <li> téléphone: ...</li>
+                    <li> permis: B,A1,</li>
+                </ul>
+
+
+            </div>
+
+            <div id="loisir">
+                <h3>centre d'intérét</h3>
+                <div class="ligne"></div>
+                <h4>Sport:</h4>
+                <ul>
+                    <li> sport de combat(kick, thaï, full-contact)</li>
+                    <li> Musculation cross-training</li>
+                    <li> course à pied</li>
+                    <li> piscine</li>
+                </ul>
+                <h4>autres:</h4>
+                <p> pêche, electronique (réparation, conception)</p>
+            </div>
+        </div>
     </div>
-    <h1 class="cell3 ">Demessine Antoine </h1>
-    <h2  class="cell1" >Technicien VUL/VI</h2>
-   
-    <div id="formation">          
-    <h3 id="tt">FORMATION</h3>
-    <div class="ligne"></div>
-    <ul>
-         <ol> 2022: Habilitation vehicules haute tension et hybride (interne à l'entreprise)</ol>
-         <ol> 2014-2016: BTS AVA option vehicules industruiel</ol>
-         <ol> 2011-2013: BAC Mecanicien poids lourd</ol>
-    </ul>
-     </div>
-    
-     <div id="experiences">
-    <h3>EXPERIENCES</h3>
-    <div class="ligne"></div>
-     <section>
-     <div class="dateExp"> <p> 04/11/2014 - aujourd'hui</p>
-       
-        
-     </div> <div class="job">  <p>technicien VUL/VI Mercedes-Benz GORRIAS ARRAS</p><ul>
-                                           <li class="tache"> de la petite mecanique: viange, freinage, embrayage... </li>
-                                           <li class="tache"> à la grosse mecanique: remplacement d'organe (moteur, boite, pont)  </li>
-                                           <li class="tache"> du diagnostique electrique, mecanique </li></ul></div>
-    
-     </section>
-       <section id="auchan">     
-     <div class="dateExp"> <p>2013 - 2014</p> </div>
-
-         <div class="job"> <p>job etudiant à Auchan englos </p><ul>
-        <li class="tache"> mise en rayon </li></div> 
-         </section>
-     </div>
-      <div id="competences">
-        <h3>COMPETENCES</h3>
-        <div class="ligne"></div>
-        <h4>languages</h4>
-        
-      </div>
-     </div>
-
-     <div id="colonneG" class="visible">
-
-        <img src="./profile-picture.jpeg" alt="photoProfile" id="photoProfile">
-        
-     <div id="profil">
-        <h3 id="pro">profil</h3>
-        <div id="ligneP"></div>
-        <p>sérieux, consciencieux, curieux pour apprendre de nouvelles choses</p>
-     </div>
-
-     <div id="contact">
-        <h3>contact</h3>
-        <div class="ligne"></div>
-        <ul>
-        <li> Ville: ... </li>
-        <li> mail: ...</li>
-        <li> téléphone: ...</li>
-        <li> permis: B,A1,</li>
-        </ul>
-        
-       
-    </div>
-
-    <div id="loisir">
-        <h3>centre d'intérét</h3>
-        <div class="ligne"></div>
-        <h4>Sport:</h4> 
-            <ul><li> sport de combat(kick, thaï, full-contact)</li>
-                <li> Musculation cross-training</li>
-                <li> course à pied</li>
-                <li> piscine</li></ul>
-        <h4>autres:</h4>
-        <p> pêche, electronique (réparation, conception)</p>
-    </div>
-</div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

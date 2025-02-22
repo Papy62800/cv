@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+}
+
+button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.colonneG {
+    width: 20%;
+    height: 100%;
+    padding: 25px;
+    background-color: red;
+}
+
+.test h3 {
+    color: white;
+}
+
+.test.experiences h3 {
+    color: rgb(82, 105, 85);
+}
+
+.colonneD {
+    width: 80%;
+    /* height: 100%; */
+    background-color: purple;
+    padding: 25px;
+}
+
+.containerImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.containerContent {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.containerImg2 {
+    display: NONE;
+}
+
+.containerTitle {
+    display: flex;
+}
+
+@media screen and (max-width:1024px) {
+    .colonneG {
+        left: -1000px;
+        width: 100%;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .colonneG.toto {
+        left: 0px;
+    }
+
+    .containerImg2 {
+        display: block;
+    }
+
+    .colonneD {
+        width: 100%;
+    }
+}
