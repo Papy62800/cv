@@ -12,15 +12,15 @@
     <div id="boite">
     <div id="colonneD">
         <div class="row hidden"  >
-     <img src="./profile-picture.jpeg" alt="photoProfil"  id="photoProfil" >
-     <button id="toggleButton" >afficher profil</button>
+     <img src="./profile-picture.jpeg" alt="photoProfil"  id="photoProfil"  >
+     <button  id="toggleButton" onclick="document.getElementById('colonne').style.visibility='hidden'">afficher profil</button>
      <h1 class="cell">Demessine Antoine </h1>
     </div>
     <h1 class="cell3 ">Demessine Antoine </h1>
     <h2  class="cell1" >Technicien VUL/VI</h2>
    
     <div id="formation">          
-    <h3>FORMATION</h3>
+    <h3 id="tt">FORMATION</h3>
     <div class="ligne"></div>
     <ul>
          <ol> 2022: Habilitation vehicules haute tension et hybride (interne à l'entreprise)</ol>
@@ -59,7 +59,7 @@
 
      <div id="colonneG" class="visible">
 
-        <img src="./profile-picture.jpeg" alt="photoProfile" id="photoProfile" onclick="afficher()">
+        <img src="./profile-picture.jpeg" alt="photoProfile" id="photoProfile">
         
      <div id="profil">
         <h3 id="pro">profil</h3>
@@ -91,8 +91,8 @@
         <h4>autres:</h4>
         <p> pêche, electronique (réparation, conception)</p>
     </div>
-
 </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
