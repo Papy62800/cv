@@ -1,193 +1,183 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1,h2{
-    text-align: left;
-    margin-left: 50px;
-    font-size: 3em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h1,
+h2 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 3em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2em;
-    margin-left: 50px;
-    margin-bottom: 5px;
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  margin-left: 50px;
+  margin-bottom: 5px;
 }
 
-h4 ,p{margin-left: 5px;}
-
-.ligne{
-    border: solid ;
-    width: 40px;
-    height:1px;
-    background-color: black;
-    margin-left: 50px;
+h4,
+p {
+  margin-left: 5px;
 }
 
-#boite{
+.ligne {
+  border: solid;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin-left: 50px;
+}
+
+#boite {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#colonneG {
+  background-color: rgba(59, 59, 59);
+  text-align: left;
+  width: 30%;
+  height: 100%;
+}
+#colonneD {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+}
+
+#photoProfil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border: solid 2px;
+  border-radius: 50%;
+}
+#photoProfile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border: solid 2px;
+  border-radius: 50%;
+}
+#pro {
+  margin-left: 0px;
+  text-align: center;
+}
+#ligneP {
+  border: solid;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  display: flex;
+}
+#auchan {
+  display: flex;
+}
+
+.dateExp {
+  width: 30%;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 70%;
+}
+
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 95%;
+  }
+  #colonneD {
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  #photoMobile {
     display: flex;
-    flex-direction: row-reverse;
-    
-}
 
-#colonneG{
-    background-color: rgba(59, 59, 59);
-    text-align: left;   
-    width: 30%; 
-    height: 100%;
-    
-   
-   
-}
-#colonneD{
-    background-color: rgb(255, 255, 255);  
-    width: 70%;
-   
-}
+    border: solid 2px;
+  }
+  .row {
+    display: flex;
 
-#photoProfil{ 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    height: 30%; 
-    border: solid 2px;
-    border-radius: 50%;
-   
-}
-#photoProfile{ 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 30%; 
-    border: solid 2px;
-    border-radius: 50%;
-   
-}
-#pro{
+    margin-bottom: 10px;
+  }
+  .cell {
+    width: 75%;
     margin-left: 0px;
+
+    align-self: center;
+  }
+  .cell1 {
     text-align: center;
-} 
-#ligneP{
-    border: solid ;
-    width: 40px;
-    height:1px;
-    background-color: black;
+    width: auto;
+    margin-right: auto;
     margin-left: auto;
-    margin-right:auto;
-}
+  }
 
+  h2 {
+    font-size: 30px;
+    width: 100%;
+    text-align: start;
+    align-self: flex-end;
+  }
+  button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+  }
 
+  h3 {
+    margin-left: 10%;
+    font-size: 25px;
+  }
 
-section{ 
-    display:flex;  
-}
-#auchan{
-    display: flex;
-}
+  #photoProfile {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 30%;
+    height: 30%;
+    border: solid 2px;
+    border-radius: 50%;
+    border-color: blackd;
+  }
 
-.dateExp{ 
-
-width: 30%;
-}
-
-.job{
-display: flex;
-flex-direction: column;
-row-gap: 30px;
-width: 70%;
-}
-
-.visible{
+  #colonneG {
+    left: -1000px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+  }
+  #colonneG.toto {
+    left: 0px;
+  }
+  .hidden {
     display: block;
-}
-.hidden{
+  }
+  .cell3 {
     display: none;
-}
-
-
-@media  screen and (max-width: 800px) {
-    body {      
-    width: 95%;       
-    }
-    #colonneD{
-        display: block;
-        width: 100%;
-        padding: 5px;
-      /*  border: solid 2px;
-        border-color:red;
-        background-color: aqua;*/
-    }
-
-    #photoMobile{
-        display: flex;
-      //  flex-direction: column-reverse;
-        border: solid 2px;     
-      
-    }
-    .row{
-        display: flex;
-      //  flex-direction: column;
-        margin-bottom: 10px;
-
-    }
-    .cell{
-        width: 75%;
-        margin-left: 0px;
-       /* background-color: blue;*/
-        align-self: center;
-        
-    }
-    .cell1{       
-        text-align: center;
-        width: auto;
-        margin-right: auto;
-        margin-left: auto;
-        
-        
-     }
-    
-     h2{
-      font-size: 30px;
-      width: 100%;
-      text-align: start;
-      align-self: flex-end;
-     /* border: solid 2px;*/
-    }
-   button{
-    /*border: solid 2px;*/
-    align-self: self-end;
-    margin-bottom: px;
-   }
-
-    h3{
-        margin-left: 10%;
-        font-size: 25px;
-    }
- 
-    #photoProfile{ 
-        
-        margin-top: 5px;
-        margin-left: 10px;
-        width: 30%;
-        height: 30%; 
-        border: solid 2px;
-        border-radius: 50%;
-        border-color: blackd;
-    }
-
-    #colonneG{
-        display: none;
-       }
-    
-    .hidden{
-        display: block;
-    }
-    .cell3{display: none;}
-
+  }
 }

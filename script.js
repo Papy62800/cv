@@ -1,11 +1,9 @@
-document.getElementById('toggleButton').addEventListener('click', function () {
-    const image = document.getElementById('photoProfil');
+let colonneG = document.getElementById("colonneG");
+let btn = document.getElementById("toggleButton");
 
-    if (image.classList.contains('hidden')) {
-        image.classList.remove('hidden');
-        this.textContent = 'visible'; // Change le texte du bouton  
-    } else {
-        image.classList.add('hidden');
-        this.textContent = 'hidden'; // Change le texte du bouton  
-    }
-});
+btn.addEventListener("click", openMenu);
+
+function openMenu() {
+  colonneG.classList.toggle("toto");
+  console.log(colonneG);
+}
