@@ -167,7 +167,7 @@ section {
 
   #colonneG {
     left: -1000px;
-    width: 100%;
+    width: 100vh;
     position: absolute;
     transition: all 0.5s ease-in-out;
   }
