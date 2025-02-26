@@ -38,10 +38,11 @@ p {
 }
 
 #colonneG {
-  background-color: rgba(59, 59, 59);
+  background-color: rgb(163, 159, 159);
   text-align: left;
   width: 30%;
   height: 100vh;
+  padding-top: 10px;
 }
 #colonneD {
   background-color: rgb(255, 255, 255);
@@ -50,7 +51,7 @@ p {
 }
 
 #photoProfil {
-  display: block;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   width: 150px;
@@ -68,7 +69,7 @@ p {
   border-radius: 50%;
 }
 #pro {
-    width: 100%;
+  width: 100%;
   margin-left: 0px;
   text-align: center;
 }
@@ -80,9 +81,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
+ol,
+li {
+  padding: 5px;
+}
 section {
   display: flex;
+  padding: 5px;
 }
 #auchan {
   display: flex;
@@ -97,6 +102,7 @@ section {
   flex-direction: column;
   row-gap: 30px;
   width: 70%;
+  padding: 1px;
 }
 
 .visible {
@@ -106,28 +112,24 @@ section {
   display: none;
 }
 
+button {
+  display: none;
+}
 
 @media screen and (max-width: 800px) {
   body {
-   
   }
   #colonneD {
     display: block;
     width: 100%;
     padding: 5px;
-   
   }
-  
 
-  #photoMobile {
-    display: flex;
-    border: solid 2px;
-  }
+
   .row {
     display: flex;
     margin-bottom: 10px;
     flex-wrap: wrap;
-   
   }
   .cell {
     width: 75%;
@@ -149,6 +151,7 @@ section {
     align-self: flex-end;
   }
   button {
+    display: block;
     position: fixed;
     top: 15px;
     right: 15px;
@@ -161,13 +164,12 @@ section {
   }
 
   #photoProfile {
-    margin-top: 5px;
-    margin-left: 10px;
+    margin: 5px auto 10px auto;
     width: 150px;
     height: 150px;
     border: solid 2px;
     border-radius: 50%;
-    border-color: blackd;
+    border-color: black;
   }
 
   #colonneG {
@@ -175,8 +177,7 @@ section {
     height: 100vh;
     left: -1000px;
     position: absolute;
-    transition: all 0.5s ease-in-out;
-   
+    transition: all 1s ease-in-out;
   }
   #colonneG.toto {
     left: 0px;
