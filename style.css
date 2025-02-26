@@ -43,6 +43,7 @@ p {
   width: 30%;
   height: 100vh;
   padding-top: 10px;
+
 }
 #colonneD {
   background-color: rgb(255, 255, 255);
@@ -153,9 +154,12 @@ button {
   button {
     display: block;
     position: fixed;
+    height: 30px;
+    width: 30px;
     top: 15px;
     right: 15px;
     z-index: 1000;
+    background-color: transparent;
   }
 
   h3 {
