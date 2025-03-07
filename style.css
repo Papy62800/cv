@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 3em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+h4,
+p {
+  margin-left: 5px;
+}
+
+.ligne {
+  border: solid;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+#boite {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#colonneG {
+  background-color: rgb(163, 159, 159);
+  text-align: left;
+  width: 30%;
+  height: 100vh;
+  padding-top: 10px;
+  padding-left: 20px;
+
+}
+#colonneD {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 100vh;
+  }
+
+#photoProfil {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border: solid 2px;
+  border-radius: 50%;
+}
+#photoProfile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border: solid 2px;
+  border-radius: 50%;
+}
+#pro {
+  width: 100%;
+  margin-left: 0px;
+  text-align: center;
+}
+#ligneP {
+  border: solid;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+ol,
+li {
+  padding: 5px;
+}
+section {
+  display: flex;
+  padding: 15px;
+}
+#auchan {
+  display: flex;
+}
+
+.dateExp {
+  width: 30%;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 70%;
+  padding: 1px;
+  
+}
+
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+button {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+  }
+  #colonneD {
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+
+
+  .row {
+    display: flex;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .cell {
+    width: 75%;
+    margin-left: 0px;
+
+    align-self: center;
+  }
+  .cell1 {
+    text-align: center;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h2 {
+    font-size: 30px;
+    width: 100%;
+    text-align: start;
+    align-self: flex-end;
+  }
+  button  {
+    display: block;
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    background-color: transparent;
+  }
+
+ 
+  h3 {
+    margin-left: 10%;
+    font-size: 25px;
+  }
+
+  #photoProfile {
+    margin: 5px auto 10px auto;
+    width: 150px;
+    height: 150px;
+    border: solid 2px;
+    border-radius: 50%;
+    border-color: black;
+  }
+
+  #colonneG {
+    width: 100%;
+    height: 100vh;
+    left: -1000px;
+    position: absolute;
+    transition: all 1s ease-in-out;
+  }
+  #colonneG.toto {
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
+  .hidden {
+    display: block;
+  }
+  .cell3 {
+    display: none;
+  }
+}
